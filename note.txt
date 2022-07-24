@@ -1,0 +1,7 @@
+step 1. Run the browser
+step 2. Go to amazon website
+step 3. look for our items link (scrape)
+step 4. put to search bar name items
+step 5. go through multiple pages (scape the whole product on the list and get all links)
+step 6. Loop through each link, and get all the data from each product & store in memory
+step 7. Create a report
