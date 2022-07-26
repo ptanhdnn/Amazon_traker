@@ -13,14 +13,16 @@ FILTERS = {
 
 BASE_URL = "http://www.amazon.com/"
 
-driver_option = EdgeOptions()
-driver = webdriver.Edge(executable_path = "./msedgedriver.exe")
+msedgedriver = "./msedgedriver.exe"
+
+options = EdgeOptions()
+#driver = webdriver.Edge(executable_path = msedgedriver)
 
 def get_web_driver(options):
-    return Edge('./msedgedriver.exe', options = driver_option)
+    return Edge(executable_path = msedgedriver, options = options)
 
 def get_web_driver_options():
-    return driver_option
+    return options
 
 def set_ignore_certificate_error(options):
     options.add_argument('--ignore-certificate-errors')

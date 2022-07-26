@@ -37,7 +37,6 @@ class AmazonAPI:
 
     def get_product_links(self):
         self.driver.get(self.base_url)
-        pass
 
 
 if __name__ == '__main__':
